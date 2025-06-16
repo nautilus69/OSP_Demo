@@ -1,0 +1,12 @@
+.Rproj
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+*.Rout
+/renv/
+/packrat/
+/docs/
+/target/
+.Rprofile
+
