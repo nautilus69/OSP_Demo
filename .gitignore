@@ -1,12 +1,36 @@
+# RStudio files
 .Rproj
 .Rhistory
 .RData
 .Ruserdata
 .DS_Store
 *.Rout
+
+# renv / packrat dependencies
 /renv/
 /packrat/
+
+# R package build artifacts
+/.Rhistory
+/.RData
+/.Ruserdata
+*.Rproj
+.Rproj.user
+.Rprofile
+.httr-oauth
+.Renviron
+.DS_Store
+Thumbs.db
+.cache/
+.git/
+*.log
+*~
+*#
 /docs/
 /target/
-.Rprofile
-
+/vignettes/*.html
+/vignettes/*.pdf
+/man/
+/.Rinsta
+/.Rprofile
+/.Rprofile.d

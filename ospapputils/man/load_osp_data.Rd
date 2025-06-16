@@ -7,15 +7,18 @@
 load_osp_data(file_path = NULL)
 }
 \arguments{
-\item{file_path}{(Optional) Path to a file to simulate loading.}
+\item{file_path}{(Optional) Path to a file to simulate loading. Not used for mock data.}
 }
 \value{
-A data frame containing mock PBPK/QSP simulation and observed data.
+A data frame containing mock PBPK/QSP simulation and observed data,
+with columns \code{Time}, \code{Concentration}, \code{StudyID}, \code{Group}, \code{DataType},
+\code{SubjectID}, \code{Compound}, and \code{Units}.
 }
 \description{
 This function loads mock Open Systems Pharmacology (OSP) Suite simulation
 and observed clinical data for demonstration purposes. In a real
 application, this would parse actual OSP outputs (e.g., from PK-Sim, MoBi).
+It simulates a typical concentration-time profile for a compound.
 }
 \examples{
 # Generate mock data

@@ -1,20 +1,22 @@
 Package: ospapputils
+Type: Package
 Title: Utilities for OSP Suite Shiny Applications
 Version: 0.1.0
-Authors@R: person("Sia", "Mirza", email = "Siawasch.mirzaee@gmail.com", role = c("aut", "pre"))
+Author: SiaMirza
+Maintainer: The package maintainer <Siawasch.mirzaee@gmail.com>
 Description: Provides utility functions for handling and preparing Open Systems Pharmacology (OSP) Suite data for analysis and visualization in Shiny applications, with a focus on pharmaceutical research.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 Imports:
-    dplyr, # For data manipulation
-    ggplot2, # For plotting utilities
-    readr, # For robust CSV reading
-    tibble # For data frames
+    dplyr, 
+    ggplot2, 
+    readr, 
+    tibble 
 Suggests:
-    testthat, # For unit testing
-    knitr, # For vignettes
-    rmarkdown, # For vignettes
-    readxl # For reading Excel files
+    testthat, 
+    knitr, 
+    rmarkdown, 
+    readxl 
 VignetteBuilder: knitr
 RoxygenNote: 7.3.2
