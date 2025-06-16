@@ -23,7 +23,7 @@ load_osp_data <- function(file_path = NULL) {
     DataType = "Observed"
   )
   observed_data$Concentration[observed_data$Concentration < 0] <- 0 # No negative concentrations
-  
+
   # Define mock simulated data (e.g., from PK-Sim)
   simulated_data <- tibble::tibble(
     Time = seq(0, 24, by = 0.1),
@@ -33,7 +33,7 @@ load_osp_data <- function(file_path = NULL) {
     DataType = "Simulated"
   )
   simulated_data$Concentration[simulated_data$Concentration < 0] <- 0
-  
+
   # Combine and add common required columns for visualization
   combined_data <- dplyr::bind_rows(observed_data, simulated_data) %>%
     dplyr::mutate(
@@ -42,7 +42,7 @@ load_osp_data <- function(file_path = NULL) {
       Compound = "Compound A",
       Units = "ng/mL"
     )
-  
+
   message("Mock OSP data loaded for demonstration.")
   return(combined_data)
 }
