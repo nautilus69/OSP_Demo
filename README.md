@@ -8,7 +8,7 @@ This repository contains a demonstration of a modular Shiny application for expl
 * `ospapputils/`: An R package providing utility functions for data handling, preparation, and potentially advanced analytics, designed to support the Shiny application.
 * `.github/workflows/`: Holds GitHub Actions workflows for continuous integration (e.g., R CMD check for the `ospapputils` package).
 
-## Features (Current - End of Day 1)
+## Features (Current - Done By now)
 
 * **Modular Shiny Application:** Basic structure with separate modules for data input and visualization.
 * **Mock OSP Data Loading:** Ability to load mock PBPK/QSP simulation and observed clinical data.
@@ -20,9 +20,9 @@ This repository contains a demonstration of a modular Shiny application for expl
 ## How to Run
 
 1.  Clone this repository:
-    `git clone https://github.com/YourUsername/esqlabs-shiny-demo.git`
+    `git clone https://github.com/nautilus69/OSP_Demo.git`
 2.  Navigate to the Shiny app directory:
-    `cd esqlabs-shiny-demo/OSPExplorerApp`
+    `cd OSP_Demo/OSPExplorerApp`
 3.  Ensure `ospapputils` is installed (you might need to install `devtools` first, then run `devtools::install("../ospapputils")` from the `OSPExplorerApp` directory).
 4.  Run the app in R:
     ```R
@@ -31,7 +31,7 @@ This repository contains a demonstration of a modular Shiny application for expl
     # R -e "shiny::runApp('OSPExplorerApp')"
     ```
 
-## Planned Enhancements (Day 2)
+## Planned Enhancements (TODO)
 
 * **Enhanced Data Comparison:** Incorporate tools for individual/population overlays and goodness-of-fit metrics.
 * **Interactive Plotting:** Integrate `plotly` for interactive data exploration.
