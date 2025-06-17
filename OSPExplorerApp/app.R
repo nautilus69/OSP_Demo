@@ -1,6 +1,7 @@
 # OSPExplorerApp/app.R
 
 # Load required packages
+library(plotly)
 library(shiny)
 library(dplyr)
 library(ggplot2)
@@ -82,12 +83,14 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       class = "sidebar",
+      width = 2,
       h3("Controls", style = "margin-top: 0; color: #343a40;"),
       # Data Loader Module UI
       mod_data_loader_ui("data_input")
     ),
     mainPanel(
       class = "main-panel",
+      width = 10,
       tabsetPanel(
         id = "main_tabs",
         tabPanel("Visualization", mod_visualization_ui("data_plot")),
