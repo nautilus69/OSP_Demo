@@ -16,6 +16,10 @@ This repository contains a demonstration of a modular Shiny application for expl
 * **R Package (`ospapputils`):** Initial package structure with a function to generate mock data.
 * **Unit Testing:** Basic `testthat` unit tests for the `ospapputils` package.
 * **CI/CD:** Basic GitHub Actions workflow to run `R CMD check` on `ospapputils` upon push/pull request.
+* **Enhanced Data Comparison:** Incorporate tools for individual/population overlays and goodness-of-fit metrics.
+* **Interactive Plotting:** Integrate `plotly` for interactive data exploration.
+* **Sophisticated Data Upload/Validation:** Improve robustness of file uploads and add data validation checks within `ospapputils`.
+* **GxP Documentation:**  a conceptual framework for validation within the project.
 
 ## How to Run
 
@@ -33,8 +37,9 @@ This repository contains a demonstration of a modular Shiny application for expl
 
 ## Planned Enhancements (TODO)
 
-* **Enhanced Data Comparison:** Incorporate tools for individual/population overlays and goodness-of-fit metrics.
-* **Interactive Plotting:** Integrate `plotly` for interactive data exploration.
-* **Sophisticated Data Upload/Validation:** Improve robustness of file uploads and add data validation checks within `ospapputils`.
-* **GxP Documentation:** Add a simple validation section or a conceptual framework for validation within the project.
+* **GxP Documentation:** Add a simple validation section to conceptual framework for validation within the project.
+
+* **End-to-End Test:** Add test with Shinytest
+
+* **CI/CD:** Advance Github Action with 'R CMD check' upgrad for scale
 * **Containerization:** Introduce a Dockerfile for reproducible deployment.
