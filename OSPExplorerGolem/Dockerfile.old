@@ -1,0 +1,26 @@
+FROM rocker/r-ver:4.3.1
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    libcurl4-openssl-dev \
+    libssl-dev \
+    libxml2-dev \
+    libfontconfig1-dev \
+    g++ \
+    zlib1g-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install R packages
+RUN install2.r --error shiny remotes
+
+# Copy the app
+COPY . /app
+WORKDIR /app
+
+# Install the app (assumes it's a {golem} pkg)
+RUN R -e "remotes::install_local('/app', dependencies = TRUE)"
+
+# Expose Shiny port
+EXPOSE 3838
+
+CMD ["R", "-e", "OSPExplorerGolem::run_app(host = '0.0.0.0', port = 3838)"]
